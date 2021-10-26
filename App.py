@@ -9,11 +9,11 @@ from flask_mysqldb import MySQL
 app = Flask(__name__)
 
 #Mysql connection
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'root'
-app.config['MYSQL_PORT'] = 3306
-app.config['MYSQL_DB'] = 'aplicaciongym'
+app.config['MYSQL_HOST'] = 'ec2-3-221-100-217.compute-1.amazonaws.com'
+app.config['MYSQL_USER'] = 'zrsirfmyuqtoov'
+app.config['MYSQL_PASSWORD'] = '93fb8780150b7132c4d8ca2bd2be418e40d126941b3e91f1750de2445e02a754'
+app.config['MYSQL_PORT'] = 5432
+app.config['MYSQL_DB'] = 'da7t12d2030eu3'
 mysql=MySQL(app)
 
 # settings session
